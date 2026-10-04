@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Poppins:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+$text-dark: #242635;
+$text-gray: #555555;
+$bg-color: #ffffff;
+$font-logo: 'Baloo 2', cursive;
+$font-heading: 'Poppins', sans-serif;
+$font-main: 'Source Sans 3', sans-serif;
+
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bg-color;
+    color: $text-dark;
+    font-family: $font-main;
+    line-height: 1.6;
+    padding: 20px 8%;
+
+    @include mobile {
+        padding: 15px 5%;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
