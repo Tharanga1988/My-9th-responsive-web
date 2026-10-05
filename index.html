@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,60 +12,68 @@
 
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
 
-    <header class="header">
+    <div class="page-container">
 
-        <div class="logo">Head.</div>
+        <div class="left-panel">
 
-        <!-- Hamburger with Checkbox -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+            <header class="header">
 
-        <nav class="nav-links">
-            <ul>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
+                <div class="logo">Head.</div>
 
-        <!-- <div class="hamburger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div> -->
+                <!-- Meatball Menu with Checkbox -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+                <label for="menu-toggle" class="meatball-menu">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </label>
 
-    </header>
+                <!-- If use div should use Js -->
+                <!-- <div class="meatball-menu">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div> -->
 
-    <main class="hero-section">
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
 
-        <div class="left-content">
+            </header>
 
-            <h1 class="fade-in-up">Recipes</h1>
+            <main class="hero-content">
 
-            <p class="fade-in-up delay-1">
-                Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae
-                ullamcorper.
-            </p>
+                <h1 class="fade-in-up">Recipes</h1>
 
-            <div class="scroll-down fade-in-up delay-2">
-                <i class="fa-solid fa-arrow-down"></i>
-            </div>
+                <p class="fade-in-up delay-1">
+                    Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus,
+                    vitae
+                    ullamcorper.
+                </p>
+
+                <a class="scroll-down fade-in-up delay-2" href="#">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <!-- &darr;
+                    &#8595; -->
+                </a>
+
+            </main>
 
         </div>
 
-        <div class="right-image fade-in">
-            <!-- &darr;
-            &#8595; -->
+
+        <div class="right-panel fade-in">
             <img src="images/recipe-1.png" alt="Pumkin-Soup">
         </div>
 
-    </main>
+    </div>
 
 </body>
 
